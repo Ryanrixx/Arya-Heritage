@@ -13,7 +13,7 @@ export default function HomePage() {
             ✦ Rooted in Tradition · Crafted for Modern Wellness
           </div>
           <h1 className="heading-display" style={{ color: "var(--cream)", maxWidth: "700px", margin: "0 auto 1.25rem" }}>
-            Nature's Heritage,<br />
+            Nature&apos;s Heritage,<br />
             <span style={{ color: "var(--gold)" }}>Crafted for Today</span>
           </h1>
           <p style={{ fontSize: "1.125rem", color: "rgba(250,247,240,.7)", maxWidth: "520px", margin: "0 auto 2.5rem", lineHeight: 1.75 }}>
