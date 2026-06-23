@@ -1,5 +1,5 @@
 /**
- * Seed script for Saffron & Stone wellness e-commerce platform.
+ * Seed script for Arya Heritage wellness e-commerce platform.
  *
  * Run:  npx tsx src/lib/db/seed.ts
  *
@@ -55,10 +55,10 @@ async function upsertSize(name: string, slug: string, sortOrder: number) {
 // ─── Main seed ────────────────────────────────────────────────────────────────
 
 async function seed() {
-  console.log("🌱 Seeding Saffron & Stone database…\n");
+  console.log("🌱 Seeding Arya Heritage database…\n");
 
   // ── 1. Brand ──────────────────────────────────────────────────────────────
-  const brand = await upsertBrand("Saffron & Stone", "saffron-and-stone");
+  const brand = await upsertBrand("Arya Heritage", "saffron-and-stone");
   console.log(`✓ Brand: ${brand.name}`);
 
   // ── 2. Categories ─────────────────────────────────────────────────────────

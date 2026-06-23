@@ -1,4 +1,4 @@
-# Saffron & Stone — Production E-commerce Platform
+# Arya Heritage — Production E-commerce Platform
 
 Premium Indian wellness brand e-commerce built with **Next.js 15**, **Drizzle ORM**, **Neon PostgreSQL**, **Better Auth**, and **Razorpay** (cards, UPI, Google Pay, NetBanking, wallets).
 
@@ -9,7 +9,7 @@ Premium Indian wellness brand e-commerce built with **Next.js 15**, **Drizzle OR
 | Area | Before | After |
 |---|---|---|
 | Payment gateway | ❌ Stripe (leftover enum only) | ✅ **Razorpay** + UPI / Google Pay |
-| Brand | Nike shoe store scaffold | Saffron & Stone — Indian wellness |
+| Brand | Nike shoe store scaffold | Arya Heritage — Indian wellness |
 | Products | Nike shoes (no seed data) | 14 Indian wellness products seeded |
 | Cart | Basic Zustand stub | Full cart with shipping threshold + drawer |
 | Checkout | No checkout flow | 3-step: review → address → Razorpay |
@@ -189,7 +189,7 @@ All brand identity, contact details, and business rules live in one file:
 ```typescript
 // src/config/brand.ts
 export const brand = {
-  name: "Saffron & Stone",
+  name: "Arya Heritage",
   freeShippingThreshold: 999,    // ₹999
   standardShippingFee: 79,       // ₹79
   categories: [

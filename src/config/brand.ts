@@ -6,7 +6,7 @@
  * component/page should import from here rather than hardcoding strings, so
  * rebranding or adjusting business rules is a one-file change.
  *
- * NOTE ON THE NAME: "Saffron & Stone" is a placeholder identity chosen to
+ * NOTE ON THE NAME: "Arya Heritage" is a placeholder identity chosen to
  * fit the brand brief (premium, Jupiter/Saturn-coded, not already a
  * dominant Ayurveda/D2C wellness brand at the time this was written). It has
  * NOT been through a formal trademark or domain-availability search — do
@@ -15,8 +15,8 @@
  */
 
 export const brand = {
-  name: "Saffron & Stone",
-  legalName: "Saffron & Stone Wellness Pvt. Ltd.",
+  name: "Arya Heritage",
+  legalName: "Arya Heritage Wellness Pvt. Ltd.",
   tagline: "Ancient Rituals, Modern Luxury",
   description:
     "Premium Ayurvedic soaps, attars, shilajit and herbal wellness — traditional ingredients, sourced honestly and formulated for modern daily rituals.",

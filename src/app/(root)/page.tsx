@@ -82,7 +82,7 @@ export default function HomePage() {
           </h2>
           <div style={{ height: "2px", width: "60px", background: "var(--gold)", margin: "0 auto 1.5rem" }} />
           <p style={{ color: "rgba(250,247,240,.65)", maxWidth: "560px", margin: "0 auto", lineHeight: 1.8, fontSize: "0.9375rem" }}>
-            Saffron & Stone was born from a belief that the Ayurvedic traditions of India deserve world-class formulation. Every ingredient is traceable, every batch lab-tested, every product cruelty-free.
+            Arya Heritage was born from a belief that the Ayurvedic traditions of India deserve world-class formulation. Every ingredient is traceable, every batch lab-tested, every product cruelty-free.
           </p>
         </div>
       </section>
