@@ -103,8 +103,8 @@ export default function CheckoutPage() {
       <div style={{ background: "var(--navy)", padding: "1rem 0" }}>
         <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <Link href="/" style={{ textDecoration: "none" }}>
-            <span style={{ color: "var(--cream)", fontWeight: 700, fontSize: "1rem" }}>SAFFRON</span>
-            <span style={{ color: "var(--gold)", fontWeight: 300, fontSize: "0.65rem", letterSpacing: "0.2em", marginLeft: "3px" }}>&amp; STONE</span>
+            <span style={{ color: "var(--cream)", fontWeight: 700, fontSize: "1rem" }}>ARYA</span>
+            <span style={{ color: "var(--gold)", fontWeight: 300, fontSize: "0.65rem", letterSpacing: "0.2em", marginLeft: "3px" }}>&amp; HERITAGE</span>
           </Link>
           <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
             {(["review", "details", "payment"] as Step[]).map((s, i) => (

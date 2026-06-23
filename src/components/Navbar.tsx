@@ -27,10 +27,10 @@ export default function Navbar() {
           <Link href="/" style={{ flex: "none", textDecoration: "none" }}>
             <span style={{ display: "flex", flexDirection: "column", lineHeight: 1 }}>
               <span style={{ fontWeight: 700, fontSize: "1.1rem", color: "var(--navy)", letterSpacing: "-0.01em" }}>
-                SAFFRON
+                ARYA
               </span>
               <span style={{ fontWeight: 300, fontSize: "0.7rem", color: "var(--gold-muted)", letterSpacing: "0.25em", textTransform: "uppercase" }}>
-                &amp; STONE
+                &amp; HERITAGE
               </span>
             </span>
           </Link>

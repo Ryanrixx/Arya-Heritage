@@ -38,8 +38,8 @@ export default function PaymentFailedPage() {
 
         <p style={{ marginTop: "1.5rem", fontSize: "0.8125rem", color: "var(--text-lighter)" }}>
           Need help? Email us at{" "}
-          <a href="mailto:care@saffronandstone.example" style={{ color: "var(--navy)" }}>
-            care@saffronandstone.example
+          <a href="mailto:aryaheritageofficail@gmail.com" style={{ color: "var(--navy)" }}>
+            aryaheritageofficail@gmail.com
           </a>
         </p>
       </div>

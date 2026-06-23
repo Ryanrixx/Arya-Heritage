@@ -58,7 +58,7 @@ async function seed() {
   console.log("🌱 Seeding Arya Heritage database…\n");
 
   // ── 1. Brand ──────────────────────────────────────────────────────────────
-  const brand = await upsertBrand("Arya Heritage", "saffron-and-stone");
+  const brand = await upsertBrand("Arya Heritage");
   console.log(`✓ Brand: ${brand.name}`);
 
   // ── 2. Categories ─────────────────────────────────────────────────────────
