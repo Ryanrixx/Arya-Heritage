@@ -16,10 +16,10 @@
 
 export const brand = {
   name: "Arya Heritage",
-  legalName: "Arya Heritage Wellness Pvt. Ltd.",
-  tagline: "Ancient Rituals, Modern Luxury",
+  legalName: "Arya Heritage",
+  tagline: "Nature's Heritage, Crafted for Today.",
   description:
-    "Premium Ayurvedic soaps, attars, shilajit and herbal wellness — traditional ingredients, sourced honestly and formulated for modern daily rituals.",
+    "Handcrafted soaps, authentic shilajit, natural attars, and wellness essentials inspired by nature and rooted in tradition.",
 
   // Used for canonical URLs, the webhook's notes field, etc.
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
@@ -48,9 +48,9 @@ export const brand = {
   // Top-level shop categories, also used for nav + homepage tiles.
   categories: [
     { name: "Soaps", slug: "soaps", blurb: "Cold-pressed, botanical bars" },
-    { name: "Attars", slug: "attars", blurb: "Alcohol-free perfume oils" },
-    { name: "Shilajit", slug: "shilajit", blurb: "Himalayan resin, lab-tested" },
-    { name: "Herbal Wellness", slug: "herbal-wellness", blurb: "Daily Ayurvedic rituals" },
+    { name: "Attars", slug: "attars", blurb: "Alcohol-free fragrances inspired by nature." },
+    { name: "Shilajit", slug: "shilajit", blurb: "Sourced with care and tested for quality." },
+    { name: "Herbal Wellness", slug: "herbal-wellness", blurb: "Traditional wellness for modern lifestyles." },
   ],
 
   trustBadges: [

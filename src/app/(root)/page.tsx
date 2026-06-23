@@ -10,14 +10,14 @@ export default function HomePage() {
         <div style={{ position: "absolute", inset: 0, opacity: 0.04, backgroundImage: "radial-gradient(circle at 20% 80%, var(--gold) 0%, transparent 50%), radial-gradient(circle at 80% 20%, var(--gold) 0%, transparent 50%)" }} />
         <div className="container" style={{ padding: "5rem 1.25rem 4rem", textAlign: "center", position: "relative", zIndex: 1 }}>
           <div className="badge badge-gold" style={{ display: "inline-flex", marginBottom: "1.5rem", letterSpacing: "0.1em" }}>
-            ✦ Ancient Rituals · Modern Luxury
+            ✦ Rooted in Tradition · Crafted for Modern Wellness
           </div>
           <h1 className="heading-display" style={{ color: "var(--cream)", maxWidth: "700px", margin: "0 auto 1.25rem" }}>
-            Pure Ayurveda,<br />
-            <span style={{ color: "var(--gold)" }}>Thoughtfully Crafted</span>
+            Nature's Heritage,<br />
+            <span style={{ color: "var(--gold)" }}>Crafted for Today</span>
           </h1>
           <p style={{ fontSize: "1.125rem", color: "rgba(250,247,240,.7)", maxWidth: "520px", margin: "0 auto 2.5rem", lineHeight: 1.75 }}>
-            Soaps, attars, shilajit, and herbal wellness rooted in 5,000 years of Vedic wisdom — made for today&apos;s India.
+            Discover handcrafted soaps, authentic shilajit, natural attars, and herbal wellness products inspired by timeless traditions and made for everyday living.
           </p>
           <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
             <Link href="/products" className="btn btn-gold btn-lg">
@@ -48,7 +48,7 @@ export default function HomePage() {
         <div className="container">
           <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
             <h2 className="heading-section">Our Collections</h2>
-            <p style={{ color: "var(--text-light)", marginTop: "0.5rem" }}>Every product category carries a distinct heritage</p>
+            <p style={{ color: "var(--text-light)", marginTop: "0.5rem" }}>Carefully crafted products inspired by nature.</p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1.25rem" }}>
             {brand.categories.map((cat) => (
@@ -75,14 +75,17 @@ export default function HomePage() {
       <section style={{ background: "var(--navy)", padding: "3.5rem 0" }}>
         <div className="container" style={{ textAlign: "center" }}>
           <p style={{ fontSize: "0.8125rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--gold)", marginBottom: "0.75rem" }}>
-            Our Philosophy
+            OUR HERITAGE
           </p>
           <h2 style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", fontWeight: 700, color: "var(--cream)", maxWidth: "640px", margin: "0 auto 1.25rem", lineHeight: 1.3 }}>
-            &ldquo;What you put on your skin is as important as what you put in your body.&rdquo;
+            &ldquo;At Arya Heritage, we believe nature offers timeless solutions for everyday wellness.&rdquo;
           </h2>
           <div style={{ height: "2px", width: "60px", background: "var(--gold)", margin: "0 auto 1.5rem" }} />
           <p style={{ color: "rgba(250,247,240,.65)", maxWidth: "560px", margin: "0 auto", lineHeight: 1.8, fontSize: "0.9375rem" }}>
-            Arya Heritage was born from a belief that the Ayurvedic traditions of India deserve world-class formulation. Every ingredient is traceable, every batch lab-tested, every product cruelty-free.
+            Our products are inspired by traditional knowledge, crafted with carefully selected ingredients, and created with a commitment to purity, quality, and authenticity.
+          </p>
+          <p style={{ color: "rgba(250,247,240,.65)", maxWidth: "560px", margin: "0 auto", lineHeight: 1.8, fontSize: "0.9375rem" }}>
+            Every product is made with attention to detail and respect for the heritage that inspires us.
           </p>
         </div>
       </section>
@@ -92,9 +95,9 @@ export default function HomePage() {
         <div className="container">
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "1.5rem" }}>
             {[
-              { icon: <Leaf size={28} />, title: "100% Natural", desc: "No parabens, no sulphates, no synthetic fragrances." },
-              { icon: <Shield size={28} />, title: "Lab Tested", desc: "Every batch verified for purity and potency." },
-              { icon: <Star size={28} />, title: "Cruelty Free", desc: "PETA-aligned. No animal testing, ever." },
+              { icon: <Leaf size={28} />, title: "100% Natural", desc: "Made with thoughtfully selected ingredients." },
+              { icon: <Shield size={28} />, title: "Small Batch Crafted", desc: "Prepared with care and consistency." },
+              { icon: <Star size={28} />, title: "Cruelty Free", desc: "Never tested on animals." },
               { icon: "🚚", title: "Pan-India Delivery", desc: `Free shipping above ₹${brand.freeShippingThreshold}.` },
             ].map((f) => (
               <div key={f.title} style={{ background: "white", borderRadius: "var(--radius-lg)", padding: "1.75rem 1.5rem", textAlign: "center", boxShadow: "0 1px 4px rgba(0,0,0,.05)" }}>
@@ -112,9 +115,9 @@ export default function HomePage() {
       {/* ── CTA ───────────────────────────────────────────────────── */}
       <section style={{ padding: "4rem 0", textAlign: "center" }}>
         <div className="container">
-          <h2 className="heading-section" style={{ marginBottom: "0.75rem" }}>Ready to begin your ritual?</h2>
+          <h2 className="heading-section" style={{ marginBottom: "0.75rem" }}>Begin Your Wellness Journey</h2>
           <p style={{ color: "var(--text-light)", marginBottom: "2rem", fontSize: "1rem" }}>
-            Browse our full catalogue and find your perfect match.
+            Discover products inspired by nature and crafted with care.
           </p>
           <Link href="/products" className="btn btn-primary btn-lg">
             Explore All Products <ArrowRight size={18} />

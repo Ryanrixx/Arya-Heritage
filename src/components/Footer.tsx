@@ -16,11 +16,11 @@ export default function Footer() {
           {/* Brand column */}
           <div>
             <div style={{ marginBottom: "0.75rem" }}>
-              <div style={{ fontWeight: 700, fontSize: "1.1rem", letterSpacing: "-0.01em" }}>SAFFRON</div>
-              <div style={{ fontWeight: 300, fontSize: "0.7rem", color: "var(--gold)", letterSpacing: "0.25em" }}>&amp; STONE</div>
+              <div style={{ fontWeight: 700, fontSize: "1.1rem", letterSpacing: "-0.01em" }}>ARYA</div>
+              <div style={{ fontWeight: 300, fontSize: "0.7rem", color: "var(--gold)", letterSpacing: "0.25em" }}>&amp; HERITAGE</div>
             </div>
             <p style={{ fontSize: "0.875rem", color: "rgba(250,247,240,.65)", lineHeight: 1.7, maxWidth: "220px" }}>
-              Ancient rituals, modern luxury. Premium Ayurvedic wellness crafted for India.
+              Premium soaps, attars, shilajit, and herbal wellness products inspired by traditional wisdom.
             </p>
             <div style={{ display: "flex", gap: "0.75rem", marginTop: "1rem" }}>
               <a href={brand.social.instagram} target="_blank" rel="noopener noreferrer" style={{ color: "rgba(250,247,240,.65)" }} aria-label="Instagram">
