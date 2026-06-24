@@ -58,7 +58,7 @@ async function seed() {
   console.log("🌱 Seeding Arya Heritage database…\n");
 
   // ── 1. Brand ──────────────────────────────────────────────────────────────
-  const brand = await upsertBrand("Arya Heritage", "Arya Heritage");
+  const brand = await upsertBrand("Arya Heritage", "arya-heritage");
   console.log(`✓ Brand: ${brand.name}`);
 
   // ── 2. Categories ─────────────────────────────────────────────────────────
@@ -117,151 +117,128 @@ async function seed() {
   const products: ProductSeed[] = [
     // ── SOAPS ────────────────────────────────────────────────────────────────
     {
-      name: "Rose & Geranium Cold-Press Soap",
+      name: "Rice Milk Glow Soap",
       description:
-        "A luxurious cold-pressed bar soap with Bulgarian rose absolute and geranium essential oil. Enriched with kokum butter and glycerin to leave skin silky-smooth. Suitable for all skin types. Each bar weighs 100g.",
+          "Handcrafted Ayurvedic bathing bar enriched with rice milk and nourishing botanicals. Gently cleanses while helping skin feel soft, radiant and refreshed. Suitable for daily use.",
       categoryId: catSoaps.id,
       variants: [
-        { sku: "SOAP-ROSE-100", price: 299, colorId: colRose.id, sizeId: sz100g.id, stock: 80, imageUrl: UNSPLASH("1541643600914-78b084683702"), isPrimary: true },
-        { sku: "SOAP-ROSE-50",  price: 179, colorId: colRose.id, sizeId: sz50g.id,  stock: 120, imageUrl: UNSPLASH("1541643600914-78b084683702") },
+        {
+          sku: "SOAP-RICEGLOW-100",
+          price: 299,
+          colorId: colNatural.id,
+          sizeId: sz100g.id,
+          stock: 100,
+          imageUrl: UNSPLASH("1541643600914-78b084683702"),
+          isPrimary: true,
+        },
       ],
     },
     {
-      name: "Neem & Tulsi Antibacterial Soap",
+      name: "Mugwort Calm Soap",
       description:
-        "Cold-process Ayurvedic soap with neem leaf extract and holy basil (tulsi). Neem's natural antimicrobial properties make this ideal for oily, acne-prone or combination skin. No artificial fragrances.",
+          "A soothing herbal soap crafted with mugwort and skin-loving oils. Designed to provide a gentle cleansing experience while supporting a calm and balanced skincare ritual.",
       categoryId: catSoaps.id,
       variants: [
-        { sku: "SOAP-NEEM-100",  price: 249, colorId: colNeem.id, sizeId: sz100g.id, stock: 95,  imageUrl: UNSPLASH("1556228453-efd6c1ff04f6"), isPrimary: true },
-        { sku: "SOAP-NEEM-150",  price: 349, colorId: colNeem.id, sizeId: sz150g.id, stock: 60,  imageUrl: UNSPLASH("1556228453-efd6c1ff04f6") },
+        {
+          sku: "SOAP-MUGWORT-100",
+          price: 299,
+          colorId: colNeem.id,
+          sizeId: sz100g.id,
+          stock: 100,
+          imageUrl: UNSPLASH("1556228453-efd6c1ff04f6"),
+          isPrimary: true,
+        },
       ],
     },
     {
-      name: "Activated Charcoal Detox Bar",
+      name: "Citrus Glow Soap",
       description:
-        "Deep-cleansing bar powered by activated charcoal and bentonite clay. Draws out impurities, unclogs pores and balances sebum production. Scented lightly with eucalyptus and tea tree essential oils.",
+          "A refreshing Ayurvedic soap infused with bright citrus notes and nourishing ingredients. Leaves skin feeling clean, energized and naturally refreshed.",
       categoryId: catSoaps.id,
       variants: [
-        { sku: "SOAP-CHAR-100", price: 329, salePrice: 279, colorId: colCharcoal.id, sizeId: sz100g.id, stock: 70, imageUrl: UNSPLASH("1607006344380-b6775a866a5e"), isPrimary: true },
-        { sku: "SOAP-CHAR-50",  price: 199, salePrice: 169, colorId: colCharcoal.id, sizeId: sz50g.id,  stock: 110, imageUrl: UNSPLASH("1607006344380-b6775a866a5e") },
+        {
+          sku: "SOAP-CITRUS-100",
+          price: 299,
+          colorId: colTurmeric.id,
+          sizeId: sz100g.id,
+          stock: 100,
+          imageUrl: UNSPLASH("1607006344380-b6775a866a5e"),
+          isPrimary: true,
+        },
       ],
     },
     {
-      name: "Haldi & Saffron Brightening Soap",
+      name: "Golden Ubtan Soap",
       description:
-        "Turmeric and saffron have been used in Indian beauty rituals for millennia. This cold-process bar harnesses both to even skin tone, reduce dark spots and impart a warm glow. Fragrance-free.",
+          "Inspired by traditional ubtan rituals, this handcrafted soap combines classic Ayurvedic ingredients to help leave skin feeling smooth, refreshed and naturally glowing.",
       categoryId: catSoaps.id,
       variants: [
-        { sku: "SOAP-TURM-100", price: 349, colorId: colTurmeric.id, sizeId: sz100g.id, stock: 85, imageUrl: UNSPLASH("1612817288484-6f916006741a"), isPrimary: true },
-        { sku: "SOAP-KESAR-100", price: 499, colorId: colKesar.id, sizeId: sz100g.id, stock: 40, imageUrl: UNSPLASH("1612817288484-6f916006741a") },
-      ],
-    },
-    {
-      name: "Chandan (Sandalwood) Moisture Bar",
-      description:
-        "The most requested soap in our collection. Pure Mysore sandalwood powder and sandalwood essential oil blended with shea butter and rice bran oil for a bar that cleanses deeply while locking in moisture.",
-      categoryId: catSoaps.id,
-      variants: [
-        { sku: "SOAP-SAND-100", price: 399, colorId: colSandalwood.id, sizeId: sz100g.id, stock: 65, imageUrl: UNSPLASH("1553361371-9b0f-4e73-8bd1-27db26d50e8a"), isPrimary: true },
-        { sku: "SOAP-SAND-150", price: 549, colorId: colSandalwood.id, sizeId: sz150g.id, stock: 35, imageUrl: UNSPLASH("1553361371-9b0f-4e73-8bd1-27db26d50e8a") },
+        {
+          sku: "SOAP-UBTAN-100",
+          price: 349,
+          colorId: colKesar.id,
+          sizeId: sz100g.id,
+          stock: 100,
+          imageUrl: UNSPLASH("1612817288484-6f916006741a"),
+          isPrimary: true,
+        },
       ],
     },
 
-    // ── ATTARS ───────────────────────────────────────────────────────────────
+// ── ATTARS ───────────────────────────────────────────────────────────────
     {
-      name: "Oud Al Qadeem Pure Attar",
+      name: "Premium Attars Collection",
       description:
-        "Steam-distilled pure agarwood (oud) oil from Assam, aged three years for maximum depth and complexity. A dark, woody, animalic fragrance that evolves beautifully on the skin over 8–10 hours. Alcohol-free.",
+          "Coming Soon. Stay tuned for our upcoming collection of traditional attars crafted with timeless fragrance traditions.",
       categoryId: catAttars.id,
       variants: [
-        { sku: "ATT-OUD-6",  price: 1499, colorId: colOud.id, sizeId: sz6ml.id,  stock: 25, imageUrl: UNSPLASH("1547531531-5b8a2e2db41a"), isPrimary: true },
-        { sku: "ATT-OUD-10", price: 2199, colorId: colOud.id, sizeId: sz10ml.id, stock: 18, imageUrl: UNSPLASH("1547531531-5b8a2e2db41a") },
-      ],
-    },
-    {
-      name: "Gulab (Rose) Attar",
-      description:
-        "Hydro-distilled rosa damascena from Kannauj — India's attar capital. A floral, rosy, slightly green fragrance that has graced the courts of Mughal emperors. Light, fresh, ideal for daily wear.",
-      categoryId: catAttars.id,
-      variants: [
-        { sku: "ATT-ROSE-6",   price: 899, salePrice: 749, colorId: colRose.id, sizeId: sz6ml.id,  stock: 45, imageUrl: UNSPLASH("1574169208507-84a5b0bfc6c6"), isPrimary: true },
-        { sku: "ATT-ROSE-10",  price: 1299, salePrice: 1099, colorId: colRose.id, sizeId: sz10ml.id, stock: 30, imageUrl: UNSPLASH("1574169208507-84a5b0bfc6c6") },
-        { sku: "ATT-ROSE-30",  price: 2999, colorId: colRose.id, sizeId: sz30ml.id, stock: 12, imageUrl: UNSPLASH("1574169208507-84a5b0bfc6c6") },
-      ],
-    },
-    {
-      name: "Mogra Jasmine Attar",
-      description:
-        "Night-blooming jasmine sambac (mogra) from Tamil Nadu, traditionally worn by Tamil women in their hair. Heady, sweet, deeply floral — one of the most beloved fragrances in South Asia. Lasts 6–8 hours on skin.",
-      categoryId: catAttars.id,
-      variants: [
-        { sku: "ATT-MOG-6",  price: 799, colorId: colJasmine.id, sizeId: sz6ml.id,  stock: 55, imageUrl: UNSPLASH("1591854002-c4dbbaa55df4"), isPrimary: true },
-        { sku: "ATT-MOG-10", price: 1149, colorId: colJasmine.id, sizeId: sz10ml.id, stock: 40, imageUrl: UNSPLASH("1591854002-c4dbbaa55df4") },
-      ],
-    },
-    {
-      name: "White Musk & Sandalwood Attar",
-      description:
-        "A modern attar blending soft white musk base with Mysore sandalwood. Clean, warm, and unisex — perfect as a daily-wear fragrance or a base for layering other attars. Long-lasting 8-hour throw.",
-      categoryId: catAttars.id,
-      variants: [
-        { sku: "ATT-MUSK-6",  price: 699, colorId: colMusk.id, sizeId: sz6ml.id,  stock: 60, imageUrl: UNSPLASH("1547531531-5b8a2e2db41a"), isPrimary: true },
-        { sku: "ATT-MUSK-10", price: 999, colorId: colMusk.id, sizeId: sz10ml.id, stock: 42, imageUrl: UNSPLASH("1547531531-5b8a2e2db41a") },
+        {
+          sku: "ATTAR-COMINGSOON",
+          price: 0,
+          colorId: colOud.id,
+          sizeId: sz6ml.id,
+          stock: 0,
+          imageUrl: UNSPLASH("1547531531-5b8a2e2db41a"),
+          isPrimary: true,
+        },
       ],
     },
 
-    // ── SHILAJIT ─────────────────────────────────────────────────────────────
+// ── SHILAJIT ─────────────────────────────────────────────────────────────
     {
-      name: "Himalayan Shilajit Resin — Gold Grade",
+      name: "Himalayan Shilajit Collection",
       description:
-        "Sourced above 16,000 feet from the Himalayan mountain ranges of Himachal Pradesh. Each batch is lab-tested for fulvic acid content (≥60%), heavy metals and microbial safety. No fillers, no additives. Dissolve a pea-sized amount in warm water or milk daily.",
+          "Coming Soon. Stay tuned for our premium Himalayan Shilajit range.",
       categoryId: catShila.id,
       variants: [
-        { sku: "SHI-GOLD-20",  price: 1299, colorId: colNatural.id, sizeId: sz20g.id,  stock: 50, imageUrl: UNSPLASH("1583912267550-d6e776bbb0b3"), isPrimary: true },
-        { sku: "SHI-GOLD-50",  price: 2799, salePrice: 2499, colorId: colNatural.id, sizeId: sz50g.id, stock: 35, imageUrl: UNSPLASH("1583912267550-d6e776bbb0b3") },
-        { sku: "SHI-GOLD-100", price: 4999, salePrice: 4499, colorId: colNatural.id, sizeId: sz100g.id, stock: 20, imageUrl: UNSPLASH("1583912267550-d6e776bbb0b3") },
-      ],
-    },
-    {
-      name: "Shilajit + Ashwagandha Wellness Blend",
-      description:
-        "Our signature adaptogen blend — Himalayan shilajit resin combined with KSM-66® ashwagandha root extract at a 3:1 ratio. Formulated to support stress adaptation, energy levels, and cognitive clarity. 30-day supply per jar.",
-      categoryId: catShila.id,
-      variants: [
-        { sku: "SHI-ASH-30",  price: 1799, salePrice: 1499, colorId: colNatural.id, sizeId: sz100g.id, stock: 40, imageUrl: UNSPLASH("1607619056574-7b8a7c2e8d1a"), isPrimary: true },
+        {
+          sku: "SHILAJIT-COMINGSOON",
+          price: 0,
+          colorId: colNatural.id,
+          sizeId: sz20g.id,
+          stock: 0,
+          imageUrl: UNSPLASH("1583912267550-d6e776bbb0b3"),
+          isPrimary: true,
+        },
       ],
     },
 
-    // ── HERBAL WELLNESS ───────────────────────────────────────────────────────
+// ── HERBAL WELLNESS ──────────────────────────────────────────────────────
     {
-      name: "Triphala Churna — Classic Ayurvedic Formula",
+      name: "Herbal Wellness Collection",
       description:
-        "The foundational tridoshic formula of Ayurveda: equal parts amalaki, bibhitaki, and haritaki. Traditionally used to support digestive health, bowel regularity, and gentle detoxification. GMP-manufactured, no synthetic binders.",
+          "Coming Soon. Stay tuned for our Ayurvedic wellness products and herbal formulations.",
       categoryId: catHerbal.id,
       variants: [
-        { sku: "HRB-TRIP-100", price: 349, colorId: colNatural.id, sizeId: sz100g.id, stock: 90, imageUrl: UNSPLASH("1515378791036-0648a3ef77b2"), isPrimary: true },
-        { sku: "HRB-TRIP-250", price: 749, salePrice: 649, colorId: colNatural.id, sizeId: sz250g.id, stock: 55, imageUrl: UNSPLASH("1515378791036-0648a3ef77b2") },
-        { sku: "HRB-TRIP-500", price: 1299, salePrice: 1099, colorId: colNatural.id, sizeId: sz500g.id, stock: 30, imageUrl: UNSPLASH("1515378791036-0648a3ef77b2") },
-      ],
-    },
-    {
-      name: "Brahmi & Shankhpushpi Memory Tonic",
-      description:
-        "A synergistic Ayurvedic blend of brahmi (bacopa monnieri) and shankhpushpi (convolvulus pluricaulis). Long used in the Vedic tradition as medhya rasayanas — herbs that nourish and revitalize the mind. Can be taken with warm milk at bedtime.",
-      categoryId: catHerbal.id,
-      variants: [
-        { sku: "HRB-BRAH-100", price: 449, colorId: colNatural.id, sizeId: sz100g.id, stock: 70, imageUrl: UNSPLASH("1506905925346-21bda4d32df4"), isPrimary: true },
-        { sku: "HRB-BRAH-250", price: 949, colorId: colNatural.id, sizeId: sz250g.id, stock: 45, imageUrl: UNSPLASH("1506905925346-21bda4d32df4") },
-      ],
-    },
-    {
-      name: "Chyawanprash Premium — Immunity Rasayan",
-      description:
-        "A modernised formulation of the ancient chyawanprash recipe with 36 herbs including amalaki, ashwagandha, bala, and dashamula. Rich in Vitamin C, antioxidants and immunomodulatory phytochemicals. No artificial colours or preservatives.",
-      categoryId: catHerbal.id,
-      variants: [
-        { sku: "HRB-CHYAW-250", price: 599, salePrice: 499, colorId: colNatural.id, sizeId: sz250g.id, stock: 60, imageUrl: UNSPLASH("1596040033229-a9821ebd058d"), isPrimary: true },
-        { sku: "HRB-CHYAW-500", price: 1099, salePrice: 899, colorId: colNatural.id, sizeId: sz500g.id, stock: 40, imageUrl: UNSPLASH("1596040033229-a9821ebd058d") },
+        {
+          sku: "HERBAL-COMINGSOON",
+          price: 0,
+          colorId: colNatural.id,
+          sizeId: sz100g.id,
+          stock: 0,
+          imageUrl: UNSPLASH("1515378791036-0648a3ef77b2"),
+          isPrimary: true,
+        },
       ],
     },
   ];
